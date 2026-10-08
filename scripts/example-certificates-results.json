@@ -1,0 +1,875 @@
+{
+  "schema_version": "1.0",
+  "sympy_version": "1.14.0",
+  "script_sha256": "1616b011ed29267657081433b31df7092650ba5cb7ffe5710544317578e4f031",
+  "coefficient_ring": "Q[t,t^-1]",
+  "rank_field": "Q(t)",
+  "orientation": "all braid strands oriented from top to bottom, then closed",
+  "conventions": {
+    "positive_Artin_action": "xi -> xi*x(i+1)*xi^-1; x(i+1) -> xi",
+    "word_composition": "rho(g1...gk)=rho(g1) o ... o rho(gk)",
+    "Fox_chain_rule_at_total_linking": "J(phi o psi)=J(psi)*J(phi)",
+    "presentation": "<x1,...,xn | rho(beta)(xj)*xj^-1, j=1,...,n>",
+    "rank_formula": "r_phi=(n-1)-rank_Q(t)(J_beta-I)"
+  },
+  "consistency_checks": {
+    "inverse_actions": true,
+    "braid_relation_free_words": true,
+    "inverse_matrices": true,
+    "braid_relation_matrices": true,
+    "two_component_unlink_rank": 1,
+    "positive_Hopf_rank": 0,
+    "positive_Hopf_linking_number": 1
+  },
+  "examples": [
+    {
+      "bottom_position_to_top_label": [
+        1,
+        3,
+        2
+      ],
+      "component_cycles": [
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "component_count": 2,
+      "crossings": [
+        {
+          "step": 1,
+          "generator": 1,
+          "top_labels": [
+            1,
+            2
+          ],
+          "sign": 1,
+          "components_zero_based": [
+            0,
+            1
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 2,
+          "generator": -2,
+          "top_labels": [
+            1,
+            3
+          ],
+          "sign": -1,
+          "components_zero_based": [
+            0,
+            1
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 3,
+          "generator": 1,
+          "top_labels": [
+            2,
+            3
+          ],
+          "sign": 1,
+          "components_zero_based": [
+            1,
+            1
+          ],
+          "intercomponent": false
+        },
+        {
+          "step": 4,
+          "generator": -2,
+          "top_labels": [
+            2,
+            1
+          ],
+          "sign": -1,
+          "components_zero_based": [
+            1,
+            0
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 5,
+          "generator": 1,
+          "top_labels": [
+            3,
+            1
+          ],
+          "sign": 1,
+          "components_zero_based": [
+            1,
+            0
+          ],
+          "intercomponent": true
+        }
+      ],
+      "linking_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "linking_indecomposable": false,
+      "decomposable_partition_witnesses": [
+        {
+          "part_zero_based": [
+            0
+          ],
+          "complement_zero_based": [
+            1
+          ],
+          "cross_linking_sums": [
+            0,
+            0
+          ]
+        }
+      ],
+      "name": "specified_two_component_braid",
+      "strand_count": 3,
+      "braid_word": [
+        1,
+        -2,
+        1,
+        -2,
+        1
+      ],
+      "artin_images_signed_words": [
+        [
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          -2,
+          -1
+        ],
+        [
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1
+        ],
+        [
+          -3,
+          -1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          3
+        ]
+      ],
+      "closure_relators_signed_words": [
+        [
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          -2,
+          -1,
+          -1
+        ],
+        [
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -2
+        ],
+        [
+          -3,
+          -1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1
+        ]
+      ],
+      "fox_jacobian": [
+        [
+          "-(t - 2)*(t**2 - t + 1)",
+          "t*(t - 1)**2",
+          "-(t - 1)**2"
+        ],
+        [
+          "(t - 1)**2",
+          "-t*(t - 1)",
+          "t"
+        ],
+        [
+          "-(t - 1)**2/t**2",
+          "1",
+          "(t - 1)**2/t**2"
+        ]
+      ],
+      "alexander_relation_matrix": [
+        [
+          "-(t - 1)**3",
+          "t*(t - 1)**2",
+          "-(t - 1)**2"
+        ],
+        [
+          "(t - 1)**2",
+          "-t**2 + t - 1",
+          "t"
+        ],
+        [
+          "-(t - 1)**2/t**2",
+          "1",
+          "-(2*t - 1)/t**2"
+        ]
+      ],
+      "independent_unreduced_burau_product": [
+        [
+          "-(t - 2)*(t**2 - t + 1)",
+          "t*(t - 1)**2",
+          "-(t - 1)**2"
+        ],
+        [
+          "(t - 1)**2",
+          "-t*(t - 1)",
+          "t"
+        ],
+        [
+          "-(t - 1)**2/t**2",
+          "1",
+          "(t - 1)**2/t**2"
+        ]
+      ],
+      "fox_equals_independent_matrix": true,
+      "relation_matrix_rank_over_Qt": 2,
+      "boundary_d1_rank_over_Qt": 1,
+      "kernel_d1_dimension_over_Qt": 2,
+      "ordinary_H1_dimension_at_t1": 2,
+      "r_phi": 0,
+      "nonzero_maximal_minors": [
+        {
+          "rows_zero_based": [
+            0,
+            1
+          ],
+          "columns_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "(t - 1)**3"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            1
+          ],
+          "columns_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "-(t - 1)**3"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            1
+          ],
+          "columns_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "(t - 1)**3"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "-(t - 1)**3/t"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "(t - 1)**3/t"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            2
+          ],
+          "columns_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "-(t - 1)**3/t"
+        },
+        {
+          "rows_zero_based": [
+            1,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "(t - 1)**3/t**2"
+        },
+        {
+          "rows_zero_based": [
+            1,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "-(t - 1)**3/t**2"
+        },
+        {
+          "rows_zero_based": [
+            1,
+            2
+          ],
+          "columns_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "(t - 1)**3/t**2"
+        }
+      ],
+      "reduced_burau_matrix": [
+        [
+          "-(t**5 - 3*t**4 + 3*t**3 - 3*t**2 + 2*t - 1)/t**2",
+          "t**3 - 2*t**2 + t - 1"
+        ],
+        [
+          "(t - 1)**2*(t**2 + 1)/t**2",
+          "-t**2 + t - 1"
+        ]
+      ],
+      "det_I_minus_reduced_burau": "(t - 1)**3*(t**2 + t + 1)/t**2",
+      "burau_closure_polynomial_up_to_unit": "(t - 1)**3/t**2",
+      "non_split_certificate": "r_phi=0; the proved connectivity lemma excludes a split link"
+    },
+    {
+      "bottom_position_to_top_label": [
+        1,
+        2,
+        3
+      ],
+      "component_cycles": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "component_count": 3,
+      "crossings": [
+        {
+          "step": 1,
+          "generator": 1,
+          "top_labels": [
+            1,
+            2
+          ],
+          "sign": 1,
+          "components_zero_based": [
+            0,
+            1
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 2,
+          "generator": -2,
+          "top_labels": [
+            1,
+            3
+          ],
+          "sign": -1,
+          "components_zero_based": [
+            0,
+            2
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 3,
+          "generator": 1,
+          "top_labels": [
+            2,
+            3
+          ],
+          "sign": 1,
+          "components_zero_based": [
+            1,
+            2
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 4,
+          "generator": -2,
+          "top_labels": [
+            2,
+            1
+          ],
+          "sign": -1,
+          "components_zero_based": [
+            1,
+            0
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 5,
+          "generator": 1,
+          "top_labels": [
+            3,
+            1
+          ],
+          "sign": 1,
+          "components_zero_based": [
+            2,
+            0
+          ],
+          "intercomponent": true
+        },
+        {
+          "step": 6,
+          "generator": -2,
+          "top_labels": [
+            3,
+            2
+          ],
+          "sign": -1,
+          "components_zero_based": [
+            2,
+            1
+          ],
+          "intercomponent": true
+        }
+      ],
+      "linking_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "linking_indecomposable": false,
+      "decomposable_partition_witnesses": [
+        {
+          "part_zero_based": [
+            0
+          ],
+          "complement_zero_based": [
+            1,
+            2
+          ],
+          "cross_linking_sums": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "part_zero_based": [
+            0,
+            1
+          ],
+          "complement_zero_based": [
+            2
+          ],
+          "cross_linking_sums": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "part_zero_based": [
+            0,
+            2
+          ],
+          "complement_zero_based": [
+            1
+          ],
+          "cross_linking_sums": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "name": "three_component_braid",
+      "strand_count": 3,
+      "braid_word": [
+        1,
+        -2,
+        1,
+        -2,
+        1,
+        -2
+      ],
+      "artin_images_signed_words": [
+        [
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          -2,
+          -1
+        ],
+        [
+          -3,
+          -1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          3
+        ],
+        [
+          -3,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          1,
+          3,
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          -1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          3
+        ]
+      ],
+      "closure_relators_signed_words": [
+        [
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          -2,
+          -1,
+          -1
+        ],
+        [
+          -3,
+          -1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1,
+          3,
+          -2
+        ],
+        [
+          -3,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          1,
+          3,
+          1,
+          2,
+          -1,
+          3,
+          1,
+          -2,
+          -1,
+          -3,
+          -1,
+          3,
+          1,
+          2,
+          -1,
+          -3,
+          1
+        ]
+      ],
+      "fox_jacobian": [
+        [
+          "-(t - 2)*(t**2 - t + 1)",
+          "t*(t - 1)**2",
+          "-(t - 1)**2"
+        ],
+        [
+          "-(t - 1)**2/t**2",
+          "1",
+          "(t - 1)**2/t**2"
+        ],
+        [
+          "(t - 1)**2*(t**2 - t + 1)/t**3",
+          "-(t - 1)**2/t",
+          "(2*t - 1)*(t**2 - t + 1)/t**3"
+        ]
+      ],
+      "alexander_relation_matrix": [
+        [
+          "-(t - 1)**3",
+          "t*(t - 1)**2",
+          "-(t - 1)**2"
+        ],
+        [
+          "-(t - 1)**2/t**2",
+          "0",
+          "(t - 1)**2/t**2"
+        ],
+        [
+          "(t - 1)**2*(t**2 - t + 1)/t**3",
+          "-(t - 1)**2/t",
+          "(t - 1)**3/t**3"
+        ]
+      ],
+      "independent_unreduced_burau_product": [
+        [
+          "-(t - 2)*(t**2 - t + 1)",
+          "t*(t - 1)**2",
+          "-(t - 1)**2"
+        ],
+        [
+          "-(t - 1)**2/t**2",
+          "1",
+          "(t - 1)**2/t**2"
+        ],
+        [
+          "(t - 1)**2*(t**2 - t + 1)/t**3",
+          "-(t - 1)**2/t",
+          "(2*t - 1)*(t**2 - t + 1)/t**3"
+        ]
+      ],
+      "fox_equals_independent_matrix": true,
+      "relation_matrix_rank_over_Qt": 2,
+      "boundary_d1_rank_over_Qt": 1,
+      "kernel_d1_dimension_over_Qt": 2,
+      "ordinary_H1_dimension_at_t1": 3,
+      "r_phi": 0,
+      "nonzero_maximal_minors": [
+        {
+          "rows_zero_based": [
+            0,
+            1
+          ],
+          "columns_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "(t - 1)**4/t"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            1
+          ],
+          "columns_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "-(t - 1)**4/t"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            1
+          ],
+          "columns_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "(t - 1)**4/t"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "-(t - 1)**4/t**2"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "(t - 1)**4/t**2"
+        },
+        {
+          "rows_zero_based": [
+            0,
+            2
+          ],
+          "columns_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "-(t - 1)**4/t**2"
+        },
+        {
+          "rows_zero_based": [
+            1,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "(t - 1)**4/t**3"
+        },
+        {
+          "rows_zero_based": [
+            1,
+            2
+          ],
+          "columns_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "-(t - 1)**4/t**3"
+        },
+        {
+          "rows_zero_based": [
+            1,
+            2
+          ],
+          "columns_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "(t - 1)**4/t**3"
+        }
+      ],
+      "reduced_burau_matrix": [
+        [
+          "-(t**2 - t + 1)*(t**4 - 2*t**3 + t**2 - 2*t + 1)/t**3",
+          "(t - 1)**2*(t**2 + 1)/t"
+        ],
+        [
+          "-(t - 1)**2*(t**2 + 1)/t**3",
+          "(t**2 - t + 1)/t"
+        ]
+      ],
+      "det_I_minus_reduced_burau": "(t - 1)**4*(t**2 + t + 1)/t**3",
+      "burau_closure_polynomial_up_to_unit": "(t - 1)**4/t**3",
+      "non_split_certificate": "r_phi=0; the proved connectivity lemma excludes a split link"
+    }
+  ],
+  "limitations": [
+    "No standard-link table identification is asserted.",
+    "Matrix product is an independent implementation of the same Alexander invariant, not a different invariant.",
+    "Non-splitness uses the connectivity lemma proved in the accompanying Markdown."
+  ]
+}
